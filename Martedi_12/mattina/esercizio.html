@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registrazione</title>
+</head>
+<body>
+<h1>Registrazione</h1>
+<h2>Completa tutti i campi e procedi con la registrazione</h2>
+
+<p>
+    In questa pagina potrai inserire tutti i dati necessari
+    per la registrazione di uno sviluppatore.
+</p>
+
+<form action="#" method="post">
+
+    <!-- DATI PERSONALI -->
+    <div>
+        <h2>Dati personali</h2>
+
+        <label for="nome"><strong>Nome</strong></label>
+        <input 
+            type="text" 
+            name="nome" 
+            id="nome"
+            placeholder="Inserisci il tuo nome"
+            required
+        >
+
+        <br><br>
+
+        <label for="cognome"><strong>Cognome</strong></label>
+        <input 
+            type="text" 
+            name="cognome" 
+            id="cognome"
+            placeholder="Inserisci il tuo cognome"
+            required
+        >
+
+        <br><br>
+
+        <label for="eta"><strong>Età</strong></label>
+        <input 
+            type="number" 
+            name="eta" 
+            id="eta"
+            placeholder="Inserisci la tua età"
+            min="1"
+            required
+        >
+
+        <br><br>
+
+        <label for="genere">Genere</label>
+        <select name="genere" id="genere" required>
+            <option value="">Scegli un genere</option>
+            <option value="m">Maschio</option>
+            <option value="f">Femmina</option>
+            <option value="altro">Altro</option>
+        </select>
+
+        <br><br>
+
+        <label for="dataDiNascita">Data di nascita</label>
+        <input 
+            type="date" 
+            name="dataDiNascita" 
+            id="dataDiNascita"
+            required
+        >
+    </div>
+
+    <hr>
+
+    <!-- STUDI -->
+    <div>
+        <h2>Studi</h2>
+
+        <label for="tipoDiStudi">Tipo di studi</label>
+        <select name="tipoDiStudi" id="tipoDiStudi" required>
+            <option value="">Seleziona il tipo di studi</option>
+            <option value="elementari">Elementari</option>
+            <option value="medie">Medie</option>
+            <option value="superiori">Superiori</option>
+            <option value="universitari">Universitari</option>
+        </select>
+
+        <br><br>
+
+        <p>Hai una specializzazione?</p>
+
+        <input 
+            type="radio" 
+            name="specializzazione" 
+            id="specializzazioneSi"
+            value="si"
+            required
+        >
+        <label for="specializzazioneSi">Sì</label>
+
+        <input 
+            type="radio" 
+            name="specializzazione" 
+            id="specializzazioneNo"
+            value="no"
+            required
+        >
+        <label for="specializzazioneNo">No</label>
+
+        <br><br>
+
+        <label for="spiegazioneSpe">
+            Descrivi la tua specializzazione
+        </label>
+
+        <br>
+
+        <textarea 
+            name="spiegazioneSpe" 
+            id="spiegazioneSpe"
+            placeholder="Scrivi qui la tua specializzazione o il tuo percorso di studi"
+            required
+        ></textarea>
+    </div>
+
+    <hr>
+
+    <!-- CREDENZIALI -->
+    <div>
+        <h2>Crea le tue credenziali</h2>
+
+        <label for="email">Email</label>
+        <input 
+            type="email" 
+            name="email" 
+            id="email"
+            placeholder="Inserisci la tua email"
+            required
+        >
+
+        <br><br>
+
+        <label for="password">Password</label>
+        <input 
+            type="password" 
+            name="password" 
+            id="password"
+            placeholder="Inserisci la password"
+            minlength="8"
+            required
+        >
+
+        <br><br>
+
+        <label for="confermaPassword">Conferma password</label>
+        <input 
+            type="password" 
+            name="confermaPassword" 
+            id="confermaPassword"
+            placeholder="Ripeti la password"
+            minlength="8"
+            required
+        >
+
+        <br><br>
+
+        <button type="submit">
+            Registrati
+        </button>
+    </div>
+
+</form>
+    
+</body>
+</html>

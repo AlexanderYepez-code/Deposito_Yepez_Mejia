@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <!-- Informazioni principali della pagina -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina eventi con registrazione">
+    <title>Esercizio 2</title>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <!-- Barra di navigazione -->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Contatti</a>
+            <a href="#">Chi Siamo</a>
+        </nav>
+
+    </header>
+
+    <!-- ================= CONTENUTO PRINCIPALE ================= -->
+    <main>
+
+        <!-- Titolo principale della pagina -->
+        <h1>Pagina per visualizzare e <strong>registrarsi</strong> agli eventi</h1>
+
+        <!-- Descrizione -->
+        <p>
+            <em>
+                In questa pagina potrai vedere gli eventi programmati
+                e registrarti per partecipare.
+            </em>
+
+        </p>
+
+        <!-- ================= TABELLA EVENTI ================= -->
+        <section>
+
+            <h2>Tabella con gli eventi programmati</h2>
+
+            <table border="1">
+
+                <!-- Intestazione tabella -->
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Nome Evento</th>
+                        <th>Luogo</th>
+                        <th>Orario</th>
+                    </tr>
+                </thead>
+
+                <!-- Corpo della tabella -->
+                <tbody>
+
+                    <tr>
+                        <td>15/06/2026</td>
+                        <td>Concerto Estivo</td>
+                        <td>Milano</td>
+                        <td>21:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>22/06/2026</td>
+                        <td>Fiera Tech</td>
+                        <td>Roma</td>
+                        <td>10:30</td>
+                    </tr>
+
+                    <tr>
+                        <td>05/07/2026</td>
+                        <td>Evento Gaming</td>
+                        <td>Torino</td>
+                        <td>15:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>18/07/2026</td>
+                        <td>Festival Musicale</td>
+                        <td>Napoli</td>
+                        <td>20:00</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- ================= SEZIONE VIDEO E IMMAGINI ================= -->
+        <section>
+
+            <h2>Video e immagini degli eventi</h2>
+
+            <!-- Video locale, ho utilizzato iframe perche era l'unico tag che mi permette di mettere un vedeo di youtube da quanto ho cercato si puo mettere anche per il maps di google e altri siti-->
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/JiNh-go3YCs" title="Video YouTube"
+                frameborder="0" allowfullscreen>
+                <!-- qui sopra ci sono gli atributi per dire che non voglio bordi e l'altra da la possibilita di mettere il vedeo in fullscreen -->
+            </iframe>
+
+            <!-- Titolo immagini -->
+            <h3>Immagini degli eventi</h3>
+
+            <!-- Immagine -->
+            <img src="https://infinitypet.eu/wp-content/uploads/2021/06/Eta%CC%80-gatto-Infinity-Pet-600x315.jpg.webp"
+                alt="Gatto nero" width="400">
+
+        </section>
+
+        <!-- ================= FORM DI REGISTRAZIONE ================= -->
+        <section>
+
+            <h2>Registrazione Evento</h2>
+
+            <p>
+                Completa il modulo per registrarti ad uno degli eventi.
+            </p>
+
+            <!-- Form -->
+            <form action="#" method="post">
+
+                <!-- Nome -->
+                <div>
+                    <label for="nome">Nome:</label>
+
+                    <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
+                </div>
+
+                <br>
+
+                <!-- Cognome -->
+                <div>
+                    <label for="cognome">Cognome:</label>
+
+                    <input type="text" id="cognome" name="cognome" placeholder="Inserisci il tuo cognome" required>
+                </div>
+
+                <br>
+
+                <!-- Email e Password -->
+                <div>
+
+                    <label for="email">Email:</label>
+
+                    <input type="email" id="email" name="email" placeholder="esempio@gmail.com" required>
+
+                    <label for="password">Password:</label>
+
+                    <input type="password" name="password" id="password" placeholder="Inserisci una password" required>
+
+                </div>
+
+                <br>
+
+                <!-- Numero di telefono -->
+                <div>
+
+                    <label for="telefono">Telefono:</label>
+
+                    <input type="tel" id="telefono" name="telefono" placeholder="+39 333 1234567">
+
+                </div>
+
+                <br>
+
+                <!-- Data di nascita -->
+                <div>
+
+                    <label for="dataNascita">
+                        Data di nascita:
+                    </label>
+
+                    <input type="date" id="dataNascita" name="dataNascita">
+
+                </div>
+
+                <br>
+
+                <!-- Selezione evento -->
+                <div>
+
+                    <label for="evento">
+                        Scegli un evento:
+                    </label>
+
+                    <select id="evento" name="evento">
+
+                        <option value="concerto">
+                            Concerto Estivo
+                        </option>
+
+                        <option value="tech">
+                            Fiera Tech
+                        </option>
+
+                        <option value="gaming">
+                            Evento Gaming
+                        </option>
+
+                        <option value="festival">
+                            Festival Musicale
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <br>
+
+                <!-- Genere -->
+                <div>
+
+                    <p>Genere:</p>
+
+                    <input type="radio" id="uomo" name="genere" value="uomo">
+
+                    <label for="uomo">Uomo</label>
+
+                    <input type="radio" id="donna" name="genere" value="donna">
+
+                    <label for="donna">Donna</label>
+
+                </div>
+
+                <br>
+
+                <!-- Checkbox privacy -->
+                <div>
+
+                    <input type="checkbox" id="privacy" required>
+
+                    <label for="privacy">
+                        Accetto i termini e le condizioni
+                    </label>
+
+                </div>
+
+                <br>
+
+                <!-- Area messaggio -->
+                <span>
+                    <em>
+                        Non avere paura di sfogarti qui ;)
+                    </em>
+                </span>
+
+                <div>
+
+                    <label for="messaggio">
+                        Messaggio:
+                    </label>
+
+                    <br>
+
+                    <textarea id="messaggio" name="messaggio" rows="5" cols="40"
+                        placeholder="Scrivi qui il tuo messaggio...">
+        </textarea>
+
+                </div>
+
+                <br>
+
+                <!-- Pulsanti -->
+                <button type="submit">
+                    Registrati
+                </button>
+
+                <button type="reset">
+                    Reset
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <p>
+            © 2026 Pagina Eventi - Tutti i diritti riservati
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
