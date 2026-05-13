@@ -1,0 +1,40 @@
+/* contenitore con l'elemento con selettore che crea una sorta di card */
+div{
+    background-color: lightblue;
+    height: 100px;
+    width: 200px;
+    padding: 20px;
+    border: 10px solid black;
+
+    /* questo serve per mettere in mezzo la card */
+    margin: 50px auto;
+    /* questo serve per far apparire l'emento piu morbbidamente */
+    transition: 1s;
+}
+
+/* cambia colore quando passi sopra col mouse */
+
+div:hover{
+    background-color: red;
+    transform: rotate(360deg);
+    display: block;
+}
+
+/* selettore identificativo */
+#titolo{
+    font-size: 2rem;
+    color: white;
+}
+
+/* selettore classe */
+.testo{
+    font-family:'Courier New', Courier, monospace;
+}
+/* questo serve per farlo sparire */
+.fantasma{
+    display: none;
+}
+/* qui lo facciamo apparire dove quyando passo sopra il div senza classe quindi l''elemnto prendi il primo fratello succesivo con la classe fantasmo' */
+div:hover + .fantasma{
+    display: block;
+}
