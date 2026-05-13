@@ -1,0 +1,18 @@
+/* qui abbiamo presso la classe contenitore e l''abbiamo messo in posizione relative e messo il sottofondo cosi si vede' */
+.contenitore {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: lightgray;
+}
+
+/* qui la box in posizione absolture quindi si verde sopra l'altro div e messo un sottofondo cosi da rendelo visibile */
+.box {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 100px;
+    height: 50px;
+    background-color: coral;
+}
+

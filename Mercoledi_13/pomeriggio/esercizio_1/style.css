@@ -1,0 +1,166 @@
+/* =========================
+   RESET DEI LINK
+   ========================= */
+/* 
+   Rimuove la sottolineatura dai link
+   e imposta il colore bianco
+*/
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* =========================
+   CONTAINER PRINCIPALE GRID
+   ========================= */
+
+.container{
+
+    /* attiva CSS Grid */
+    display: grid;
+
+    /* 
+       definisce la struttura del layout tramite aree
+
+       Riga 1:
+       header occupa entrambe le colonne
+
+       Riga 2:
+       sidebar a sinistra
+       content a destra
+
+       Riga 3:
+       footer occupa entrambe le colonne
+    */
+    grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "footer footer";
+
+    /* spazio tra gli elementi della griglia */
+    gap: 10px;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+.header{
+
+    /* collega questo elemento all'area "header" */
+    grid-area: header;
+
+    background-color: red;
+
+    /* altezza dell'header */
+    height: 50px;
+}
+/* =========================
+   SIDEBAR
+   ========================= */
+.sidebar{
+    /* assegna l'elemento alla zona sidebar */
+    grid-area: sidebar;
+
+    background-color: rgb(21, 50, 216);
+
+    /* 
+       vh = viewport height
+       80vh = 80% dell'altezza dello schermo
+    */
+    height: 80vh;
+}
+/* =========================
+   CONTENT
+   ========================= */
+.content{
+    /* assegna l'elemento alla zona content */
+    grid-area: content;
+
+    background-color: rgb(22, 212, 85);
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.footer{
+    /* assegna l'elemento alla zona footer */
+    grid-area: footer;
+    background-color: rgb(212, 11, 145);
+    height: 50px;
+}
+/* =========================
+   IMMAGINE NEL NAV
+   ========================= */
+/* seleziona tutte le img dentro nav*/
+nav img{
+
+    /* dimensione fissa del logo */
+    width: 50px;
+    height: 50px;
+}
+/* =========================
+   NAVBAR PRINCIPALE
+   ========================= */
+nav{
+    /* usa flexbox */
+    display: flex;
+
+    /* distribuisce gli elementi con spazio uniforme */
+    justify-content: space-around;
+}
+
+
+/* =========================
+   CONTENITORE DEI LINK
+   ========================= */
+.navbar{
+    display: flex;
+    /* centra orizzontalmente */
+    justify-content: center;
+    /* centra verticalmente */
+    align-items: center;
+    /* spazio tra i link */
+    gap: 20px;
+    /* grandezza del testo */
+    font-size: 2rem;
+    /*position relative serve come riferimento per eventuali elementi absolute interni */
+    position: relative;
+}
+/* =========================
+   EFFETTO HOVER LINK
+   ========================= */
+/* quando passi sopra il link cambia colore*/
+.navbar a:hover{
+    color: black;
+}
+/* =========================
+   BOTTONE
+   ========================= */
+.btn{
+    /* 
+       absolute permette di spostare
+       liberamente l'elemento
+    */
+    position: absolute;
+    /* distanza da sinistra */
+    left: 30px;
+    /* distanza dall'alto */
+    top: 50px;
+    padding: 20px;
+    border-radius: 10%;
+    background-color: red;
+}
+/* =========================
+   HOVER DEL BOTTONE
+   ========================= */
+/* quando passi sopra il bottone cambia posizione*/
+.btn:hover{
+    /* il bottone si sposta verso l'alto */
+    top: 10px;
+    /* il bottone si sposta più a destra */
+    left: 50px;
+}
