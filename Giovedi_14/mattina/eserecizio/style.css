@@ -1,0 +1,161 @@
+:root{
+    /* Colori principali del sito */
+    --colorePrincipale: #77488de5;
+    --coloreSecondario: #adade7;
+    --coloreTerziario: #58ec58;
+
+}
+
+/* RESET GENERALE */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Rimuove la sottolineatura dai link */
+a{
+    text-decoration: none;
+}
+
+/* Rimuove i pallini della lista */
+li{
+    list-style: none;
+}
+
+/* CONTENITORE PRINCIPALE */
+.container{
+
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    /* Sidebar a destra */
+    flex-direction: row-reverse;
+
+    justify-content: space-between;
+    /* Altezza minima */
+    min-height: 80vh;
+    padding: 40px 0;
+}
+
+/* HEADER */
+header{
+
+    height: 10vh;
+    background-color: var(--colorePrincipale);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* LOGO */
+#logo{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    padding-left: 20px;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar{
+
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+/* LINK NAVBAR */
+.navbar a{
+    color: var(--coloreSecondario);
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+/* Hover link */
+.navbar a:hover{
+    color: white;
+}
+
+/* MAIN */
+main{
+    background-color: var(--coloreTerziario);
+}
+
+/* CARD PRINCIPALE */
+.card{
+    text-align: center;
+    border: 10px solid var(--colorePrincipale);
+    border-radius: 20px;
+    width: 60%;
+    height: 700px;
+    padding: 20px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+/* Titolo card */
+.card h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Immagine */
+.card img{
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Testo */
+.card p{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+/* Effetto hover */
+.card:hover{
+    border-color: goldenrod;
+    transform: scale(1.02);
+    animation: cambioColore 3s infinite;
+}
+
+/* SIDEBAR */
+.sidebar{
+
+    width: 30%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    height: fit-content;
+}
+
+/* Titolo sidebar */
+.sidebar h3{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Lista */
+.sidebar li{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+/* Animalzioni */
+@keyframes cambioColore {
+
+    0% {
+        background-color: #fff0f5;
+    }
+
+    50% {
+        background-color: #ffe4b5;
+    }
+
+    100% {
+        background-color: #e0ffff;
+    }
+}
