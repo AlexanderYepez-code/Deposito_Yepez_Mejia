@@ -159,3 +159,13 @@ main{
         background-color: #e0ffff;
     }
 }
+/* Gusto con Hidden */
+/* Quindi esiste am non si vede */
+.Segreto{
+    visibility: hidden;
+}
+/* Questo invece non si vede e non esite nella pagina */
+.gusto_schifo{
+    display: none;
+
+}
