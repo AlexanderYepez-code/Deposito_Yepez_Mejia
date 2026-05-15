@@ -1,0 +1,207 @@
+
+   <!-- STRUTTURA BASE HTML
+   Documento principale del sito Flower Shop -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Charset: supporta caratteri speciali (accenti, simboli) -->
+    <meta charset="utf-8">
+
+    <!-- Compatibilità con Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Titolo della pagina (tab del browser) -->
+    <title></title>
+
+    <!-- Descrizione SEO (motori di ricerca) -->
+    <meta name="description" content="">
+
+    <!-- Responsive: adatta il sito ai dispositivi mobili -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Collegamento al file CSS esterno -->
+    <link rel="stylesheet" href="./style,.css">
+</head>
+
+<body>
+
+    <!--  HEADER (parte alta del sito)contiene logo e navigazione -->
+    <header>
+
+        <!-- Logo del sito -->
+        <div class="logo">
+            <h1>Flower Shop</h1>
+        </div>
+
+        <!-- Menu di navigazione -->
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#i_nostri_servizi">I nostri servizi</a>
+            <a href="#contatti">Contattaci</a>
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENUTO PRINCIPALE -->
+    <main>
+
+        <!-- Container principale del contenuto -->
+        <div class="container">
+
+            <!-- INTRO / SEZIONE HOME -->
+            <div class="i_nostri_servizi">
+
+                <!-- Titolo principale -->
+                <h1 id="Home">I nostri fiori</h1>
+
+                <!-- Descrizione iniziale -->
+                <p>
+                    Nel nostro negozio puoi trovare una vasta selezione di fiori freschi,
+                    bouquet personalizzati e composizioni floreali realizzate con cura e creatività.
+                    Creiamo decorazioni adatte a compleanni, matrimoni, anniversari e altri eventi speciali.
+                </p>
+
+            </div>
+
+            <!-- SEZIONE SERVIZI -->
+            <section id="i_nostri_servizi">
+
+                <h2>I nostri servizi</h2>
+
+                <!-- Lista servizi (stilizzata come card con CSS) -->
+                <ul class="servizi">
+                    <li>Bouquet personalizzati</li>
+                    <li>Consegna a domicilio</li>
+                    <li>Allestimenti per eventi</li>
+                    <li>Decorazioni floreali</li>
+                    <li>Piante da interno ed esterno</li>
+                </ul>
+
+                <!-- Sottosezione "Perché scegliere noi" -->
+                <div class="perche">
+
+                    <h2>Perché scegliere noi</h2>
+
+                    <p>
+                        Selezioniamo ogni giorno fiori freschi e materiali di qualità
+                        per offrire composizioni eleganti e raffinate.
+                        Il nostro obiettivo è rendere speciale ogni occasione con colori,
+                        profumi e creazioni uniche.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!--SEZIONE CARD FIORI tipo shop online-->
+            <section>
+
+                <div class="contenitore">
+
+                    <!-- CARD 1 -->
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Rosa rossa">
+                        <h3>Rosa Rossa</h3>
+                        <p>Simbolo di amore e passione.</p>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102" alt="Tulipani">
+                        <h3>Tulipano</h3>
+                        <p>Elegante e colorato, perfetto per la primavera.</p>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1501973801540-537f08ccae7b" alt="Girasole">
+                        <h3>Girasole</h3>
+                        <p>Porta luce e felicità ovunque.</p>
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551" alt="Lilium">
+                        <h3>Lilium</h3>
+                        <p>Eleganza e raffinatezza naturale.</p>
+                    </div>
+
+                    <!-- CARD 5 -->
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92" alt="Orchidea">
+                        <h3>Orchidea</h3>
+                        <p>Esotica e sofisticata.</p>
+                    </div>
+
+                    <!-- CARD 6 -->
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=800&q=80" alt="Peonia">
+                        <h3>Peonia</h3>
+                        <p>Fiore ricco e delicato, simbolo di fortuna e bellezza.</p>
+                    </div>
+
+                    <!-- CARD 7 -->
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551" alt="Margherita">
+                        <h3>Margherita</h3>
+                        <p>Semplice e pura, rappresenta innocenza e gioia.</p>
+                    </div>
+
+                    <!-- CARD 8 -->
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946" alt="Lavanda">
+                        <h3>Lavanda</h3>
+                        <p>Profumata e rilassante, perfetta per ambienti tranquilli.</p>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- SEZIONE CONTATTI FORM per inviare messaggi -->
+            <section>
+
+                <h1>Contattaci... Non avere paura</h1>
+
+                <form class="form">
+
+                    <!-- Nome -->
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="La tua email" required>
+                    </div>
+
+                    <!-- Messaggio -->
+                    <div class="form-group">
+                        <label for="messaggio">Messaggio</label>
+                        <textarea id="messaggio" name="messaggio" rows="5"
+                            placeholder="Scrivi il tuo messaggio..." required></textarea>
+                    </div>
+
+                    <!-- Bottone invio -->
+                    <button type="submit">Invia messaggio</button>
+
+                </form>
+
+            </section>
+
+        </div>
+    </main>
+
+
+    <!-- FOOTER parte finale del sito-->
+    <footer>
+        <p>© 2026 Flower Shop - Tutti i diritti riservati</p>
+    </footer>
+
+</body>
+</html>
